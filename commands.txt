@@ -57,3 +57,11 @@ Your branch is ahead of 'origin/main' by 1 commit.
   (use "git push" to publish your local commits)
 
 
+$ git add .
+
+$ git commit -m "stage"
+[main 19f1a27] stage
+ 2 files changed, 60 insertions(+), 1 deletion(-)
+ create mode 100644 commands.txt
+
+
