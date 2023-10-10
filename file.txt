@@ -1,2 +1,2 @@
-echo 3 > file.txt
+echo 3  > file.txt
 

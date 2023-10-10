@@ -1,0 +1,59 @@
+$ git diff
+
+$ git diff --staged
+//this is blank as nothing is in the satage yet
+
+$ git add file.txt
+
+$ git diff
+
+$ git diff --staged
+diff --git a/file.txt b/file.txt
+index 84bfdb4..14aca5a 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1,2 +1,2 @@
+-echo 3 > file.txt
++echo 2 > file.txt
+
+$ git diff
+diff --git a/file.txt b/file.txt
+index 14aca5a..84bfdb4 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1,2 +1,2 @@
+-echo 2 > file.txt
++echo 3 > file.txt
+
+
+$ git diff --staged
+diff --git a/file.txt b/file.txt
+index 84bfdb4..14aca5a 100644
+--- a/file.txt
++++ b/file.txt
+@@ -1,2 +1,2 @@
+-echo 3 > file.txt
++echo 2 > file.txt
+
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   file.txt
+
+$ git restore --staged file.txt
+
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+
